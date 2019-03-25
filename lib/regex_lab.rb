@@ -23,4 +23,5 @@ end
 
 def valid_phone_number?(phone)
   #binding.pry
+  phone.scan(/\d/).join.length == 10 ? true : false
 end
